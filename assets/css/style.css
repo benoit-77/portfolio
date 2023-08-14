@@ -1,0 +1,49 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    max-width: 1080px;
+    height: 93vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+header + #nav {
+    background-color: white;
+}
+
+.imgHeader {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10%;
+}
+
+.textHeader {
+    width: 60%;
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+#nav {
+    height: 7vh;
+}
+
+#nav.fixed-nav {
+    position:fixed;
+    top:0;
+    width:100%;
+  }
+
+section {
+    margin: 50px auto;
+    width: 50%;
+    min-width: 250px;
+}
+
