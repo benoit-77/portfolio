@@ -13,8 +13,15 @@ header {
     gap: 30px;
 }
 
-header + #nav {
-    background-color: white;
+.textHeader {
+    width: 60%;
+}
+
+h1 {
+    font-size: 3rem;
+    max-width: 500px;
+    color: #3f92a7 !important;
+    font-weight: bold;
 }
 
 .imgHeader {
@@ -23,23 +30,26 @@ header + #nav {
     border-radius: 10%;
 }
 
-.textHeader {
-    width: 60%;
-}
+#nav {
+    background-color: #8CBDCB;
+    min-height: 7vh;
+} 
 
 .navbar-nav {
     margin: auto;
-}
-
-#nav {
-    height: 7vh;
 }
 
 #nav.fixed-nav {
     position:fixed;
     top:0;
     width:100%;
-  }
+}
+
+.nav-link {
+    text-align: center;
+    color: white !important;
+    font-size: 1.2rem !important;
+}
 
 section {
     margin: 50px auto;
@@ -47,3 +57,18 @@ section {
     min-width: 250px;
 }
 
+footer {
+    width: 100%;
+    position: relative;
+    background-color: #8CBDCB;
+    margin: 0 auto;
+    bottom: 0px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.copyrights {
+    margin: auto !important;
+}
