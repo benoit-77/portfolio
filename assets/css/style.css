@@ -53,8 +53,37 @@ h1 {
 
 section {
     margin: 50px auto;
-    width: 50%;
+    width: 60%;
     min-width: 250px;
+}
+
+@media (max-width: 1250px) {
+    section {
+        width: 95%;
+        margin: 20px auto;
+    }
+  }
+  
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.screenshots {
+    min-width: 200px;
+}
+
+.projectsText {
+    width: 40%;
+}
+
+hr {
+    width: 50%;
+    margin: 50px auto !important;
 }
 
 footer {
