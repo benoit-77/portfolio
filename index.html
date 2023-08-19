@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="assets/js/navbar.js" defer></script>
 
 </head>
@@ -52,12 +53,14 @@
         </nav>
     </div>
 
+    
+
     <main>
 
         <section id="projects">
             <h2>Mes projets</h2>
 
-            <div class="projects">
+            <div class="projects" data-aos="fade-left">
               <img src="assets/img/scr_livrechanges_main.png" alt="Livr'Échanges" class="screenshots">
               <div class="projectsText">
                 <h3>Livr'Échanges</h3>
@@ -65,9 +68,7 @@
               </div>
             </div>
 
-            <hr>
-
-            <div class="projects">
+            <div class="projects" data-aos="fade-right">
               <div class="projectsText">
                 <h3>Intranet d'un hôpital</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officiis soluta, iste et modi dolore laboriosam enim sed dignissimos harum nostrum provident tenetur doloremque maxime. Dolorem rerum quas soluta libero.</p>
@@ -75,9 +76,7 @@
               <img src="assets/img/scr_hopital_main.png" alt="Livr'Échanges" class="screenshots">
             </div>
 
-            <hr>
-
-            <div class="projects">
+            <div class="projects" data-aos="fade-left">
               <img src="assets/img/scr_rssreader_main.png" alt="Livr'Échanges" class="screenshots">
               <div class="projectsText">
                 <h3>RSS Reader</h3>
@@ -85,9 +84,7 @@
               </div>
             </div>
 
-            <hr>
-
-            <div class="projects">
+            <div class="projects" data-aos="fade-right">
               <div class="projectsText">
                 <h3>Le club de Stanley</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officiis soluta, iste et modi dolore laboriosam enim sed dignissimos harum nostrum provident tenetur doloremque maxime. Dolorem rerum quas soluta libero.</p>
@@ -95,8 +92,9 @@
               <img src="assets/img/scr_leclubdestanley_main.png" alt="Livr'Échanges" class="screenshots">
             </div>
 
-
         </section>
+
+        <hr>
 
         <section id="aboutMe">
             <h2>Qui suis-je?</h2>
@@ -111,25 +109,28 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum alias!</p>
         </section>
 
-        <section id="skills">
+        <hr>
+
+        <section id="skills" data-aos="fade-up">
             <h2>Ma boîte à outils</h2>
             <!-- A MENTIONNER : HTML, CSS, JavaScript, PHP // Bootstrap, Symfony // MySQL, Git (GitHub) // Figma, Trello // Windows, Linux -->
             <ul class="skills">
-              <li><img src="/assets/icons/html.svg" alt="" class="skillsIcons">HTML</li>
-              <li><img src="/assets/icons/css.svg" alt="" class="skillsIcons">CSS</li>
-              <li><img src="/assets/icons/javascript.svg" alt="" class="skillsIcons">JavaScript</li>
-              <li><img src="/assets/icons/php.svg" alt="" class="skillsIcons">PHP</li>
-              <li><img src="/assets/icons/bootstrap.svg" alt="" class="skillsIcons">Bootstrap</li>
-              <li><img src="/assets/icons/symfony.svg" alt="" class="skillsIcons">Symfony</li>
-              <li><img src="/assets/icons/mysql.svg" alt="" class="skillsIcons">MySQL</li>
-              <li><img src="/assets/icons/github.svg" alt="" class="skillsIcons">GitHub</li>
-              <li><img src="/assets/icons/figma.svg" alt="" class="skillsIcons">Figma</li>
-              <li><img src="/assets/icons/trello.svg" alt="" class="skillsIcons">Trello</li>
-              <li><img src="/assets/icons/windows.svg" alt="" class="skillsIcons">Windows</li>
-              <li><img src="/assets/icons/linux.svg" alt="" class="skillsIcons">Linux</li>
+              <li><img src="/assets/icons/html_color.svg" alt="" class="skillsIcons">HTML</li>
+              <li><img src="/assets/icons/css_color.svg" alt="" class="skillsIcons">CSS</li>
+              <li><img src="/assets/icons/javascript_color.svg" alt="" class="skillsIcons">JavaScript</li>
+              <li><img src="/assets/icons/php_color.svg" alt="" class="skillsIcons">PHP</li>
+              <li><img src="/assets/icons/bootstrap_color.svg" alt="" class="skillsIcons">Bootstrap</li>
+              <li><img src="/assets/icons/symfony_color.svg" alt="" class="skillsIcons">Symfony</li>
+              <li><img src="/assets/icons/mysql_color.svg" alt="" class="skillsIcons">MySQL</li>
+              <li><img src="/assets/icons/github_color.svg" alt="" class="skillsIcons">GitHub</li>
+              <li><img src="/assets/icons/figma_color.svg" alt="" class="skillsIcons">Figma</li>
+              <li><img src="/assets/icons/trello_color.svg" alt="" class="skillsIcons">Trello</li>
+              <li><img src="/assets/icons/linux_color.svg" alt="" class="skillsIcons">Linux</li>
             </ul>
 
         </section>
+
+        <hr>
 
         <section id="contact">
             <h2>Contactez moi !</h2>
@@ -146,10 +147,19 @@
 
     </main>
 
+    <a href="#" class="top">&#8593;</a>
+
+    <div class="stopTopButton"></div>
+
     <footer>
         <p class="copyrights">Benoit Durand © 2023</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
