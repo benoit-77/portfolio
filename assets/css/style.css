@@ -24,7 +24,7 @@ header {
 
 h1 {
     font-size: 3rem;
-    max-width: 500px;
+    max-width: 600px;
     color: #FAF8BF !important;
     font-weight: bold;
     margin-bottom: 0.5em !important;
@@ -71,7 +71,7 @@ h2 {
     font-size: 2em;
     position: sticky;
     bottom: 40px;      
-    margin-right: 10px; 
+    margin-right: 15px; 
     place-self: end;
     margin-top: calc(100vh + var(--offset));
     margin-bottom: 30px;
@@ -108,7 +108,7 @@ section {
   }
   
 .projects1 {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -118,7 +118,7 @@ section {
 }
 
 .projects2 {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
@@ -130,11 +130,11 @@ section {
 .screenshots {
     border-radius: 10px;
     min-width: 200px;
-    max-width: 600px;
+    max-width: 550px;
 }
 
 .projectsText {
-    width: 40%;
+    width: 50%;
 }
 
 hr {
@@ -179,4 +179,42 @@ footer {
 .copyrights {
     margin: auto !important;
     color: #234E70 !important;
+}
+
+.fill {
+    font-size: 20px;
+    font-weight: 200;
+    color: #234E70;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid #FAF8BF;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+  
+.fill::after {
+    content: "";
+    background-color: #FAF8BF;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+  
+.fill:hover::after {
+    top: 0px;
+    left: 0px;
+}
+
+.projectsButtons {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
