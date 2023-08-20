@@ -218,3 +218,9 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.carousel-control-next,
+.carousel-control-prev, 
+.carousel-indicators {
+    filter: invert(100%);
+}

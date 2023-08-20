@@ -1,185 +1,407 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benoit Durand</title>
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
-    <script src="assets/js/navbar.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benoit Durand</title>
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+  <script src="assets/js/navbar.js" defer></script>
+
 
 </head>
+
 <body>
 
-    <header>
-        <div class="textHeader">
-            <h1>Bonjour ! Je suis Benoît Durand, bienvenue sur mon portfolio.</h1>
-            <p>A PROPOS DE MOI</p> 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis nostrum dignissimos saepe iusto vero ipsa labore earum ratione. Officia quidem eligendi architecto amet saepe quas explicabo, ad deserunt voluptas?</p>
-        </div>
-        <div>
-            <img src="/assets/img/pic_portfolio_1.png" alt="Photo de Benoit" class="imgHeader">
-        </div>
-    </header>
+  <header>
+    <div class="textHeader">
+      <h1>Bonjour ! Je suis Benoît Durand, bienvenue sur mon portfolio.</h1>
+      <p>A PROPOS DE MOI</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis nostrum dignissimos saepe iusto vero
+        ipsa labore earum ratione. Officia quidem eligendi architecto amet saepe quas explicabo, ad deserunt voluptas?
+      </p>
+    </div>
+    <div>
+      <img src="/assets/img/pic_portfolio_1.png" alt="Photo de Benoit" class="imgHeader">
+    </div>
+  </header>
 
-    <div id="nav">
-      <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item px-5">
-                  <a class="nav-link" aria-current="page" href="#projects">Mes projets</a>
-                </li>
-                <li class="nav-item px-5">
-                  <a class="nav-link" href="#aboutMe">A propos de moi</a>
-                </li>
-                <li class="nav-item px-5">
-                  <a class="nav-link" href="#skills">Ma boîte à outils</a>
-                </li>
-                <li class="nav-item px-5">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
+  <div id="nav">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item px-5">
+              <a class="nav-link" aria-current="page" href="#projects">Mes projets</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="#aboutMe">A propos de moi</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="#skills">Ma boîte à outils</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+
+    <section id="projects">
+
+      <h2>Mes projets</h2>
+
+      <div class="projects1" data-aos="fade-left">
+
+        <a data-bs-toggle="modal" data-bs-target="#firstModal">
+          <img src="assets/img/scr_livrechanges_main_v3.png" alt="Photo d'illustration de Livr'Échanges"
+            class="screenshots">
+        </a>
+
+        <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" style="max-width: 70%;">
+            <div class="modal-content">
+
+              <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                    class="active slideIndicators" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="6500">
+                    <img src="/assets/img/scr_leclubdestanley_main_v3.png" class="d-block w-100"
+                      alt="texte alternatif 1">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="6500">
+                    <img src="/assets/img/scr_livrechanges_main_v3.png" class="d-block w-100" alt="texte alternatif 2">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="6500">
+                    <img src="/assets/img/scr_hopital_main_v3.png" class="d-block w-100" alt="texte alternatif 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
             </div>
           </div>
-        </nav>
-    </div>
+        </div>
 
-    <main>
+        <div class="projectsText">
+          <h3>Livr'Échanges</h3>
+          <ul>
+            <li>Projet étudiant mené seul, site web avec comme thème principal le don de livres</li>
+            <li>Technologies utilisées : PHP, JavaScript, HTML, CSS, MySQL</li>
+            <li>Projet codé selon l'architecture MVC (Modèle-Vue-Contrôleur)</li>
+            <li>Le site comprend une base de données de livres, les utilisateurs peuvent laisser des commentaires et une
+              note pour chaque livre, en plus de s’inscrire comme donateur.</li>
+            <li>Le site comprend un système de messagerie pour que les utilisateurs se mettent d’accord sur la modalité
+              de la donation ou discuter.</li>
+          </ul>
 
-        <section id="projects">
-            <h2>Mes projets</h2>
+          <form class="projectsButtons">
+            <button type="submit" class="fill" formaction="https://www.livrechanges.com/">Visiter le site</button>
+            <button type="submit" class="fill" formaction="https://github.com/benoit-77/LivrEchanges/">Lien
+              GitHub</button>
+          </form>
+        </div>
+      </div>
 
-            <div class="projects1" data-aos="fade-left">
-              <img src="assets/img/scr_livrechanges_main_v3.png" alt="Photo d'illustration de Livr'Échanges" class="screenshots">
-              <div class="projectsText">
-                <h3>Livr'Échanges</h3>
-                <ul>
-                  <li>Projet étudiant mené seul, site web avec comme thème principal le don de livres</li>
-                  <li>Technologies utilisées : PHP, JavaScript, HTML, CSS, MySQL</li>
-                  <li>Projet codé selon l'architecture MVC (Modèle-Vue-Contrôleur)</li>
-                  <li>Le site comprend une base de données de livres, les utilisateurs peuvent laisser des commentaires et une note pour chaque livre, en plus de s’inscrire comme donateur.</li>
-                  <li>Le site comprend un système de messagerie pour que les utilisateurs se mettent d’accord sur la modalité de la donation ou discuter.</li>
-                </ul>
-                
-                <form class="projectsButtons">
-                  <button type="submit" class="fill" formaction="https://www.livrechanges.com/">Visiter le site</button>
-                  <button type="submit" class="fill" formaction="https://github.com/benoit-77/LivrEchanges/">Lien GitHub</button>
-               </form>
+      <div class="projects2" data-aos="fade-right">
+        <div class="projectsText">
+          <h3>Intranet d'un hôpital</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officiis soluta, iste et modi dolore
+            laboriosam enim sed dignissimos harum nostrum provident tenetur doloremque maxime. Dolorem rerum quas soluta
+            libero.</p>
+          <form class="projectsButtons">
+            <button type="submit" class="fill" formaction="https://github.com/benoit-77/hopital">Lien GitHub</button>
+          </form>
+        </div>
+        <a data-bs-toggle="modal" data-bs-target="#secondModal">
+          <img src="assets/img/scr_hopital_main_v3.png" alt="Photo d'illustration du site de l'Hôpital"
+            class="screenshots">
+        </a>
+
+        <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" style="max-width: 70%;">
+            <div class="modal-content">
+
+              <div id="secondCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#secondCarousel" data-bs-slide-to="0"
+                    class="active slideIndicators" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#secondCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#secondCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="6500">
+                    <img src="/assets/img/scr_leclubdestanley_main_v3.png" class="d-block w-100"
+                      alt="texte alternatif 1">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="6500">
+                    <img src="/assets/img/scr_livrechanges_main_v3.png" class="d-block w-100" alt="texte alternatif 2">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="6500">
+                    <img src="/assets/img/scr_hopital_main_v3.png" class="d-block w-100" alt="texte alternatif 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#secondCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#secondCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-            </div>
 
-            <div class="projects2" data-aos="fade-right">
-              <div class="projectsText">
-                <h3>Intranet d'un hôpital</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officiis soluta, iste et modi dolore laboriosam enim sed dignissimos harum nostrum provident tenetur doloremque maxime. Dolorem rerum quas soluta libero.</p>
-                <form class="projectsButtons">
-                  <button type="submit" class="fill" formaction="https://github.com/benoit-77/hopital">Lien GitHub</button>
-               </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects1" data-aos="fade-left">
+        <a data-bs-toggle="modal" data-bs-target="#thirdModal">
+          <img src="assets/img/scr_rssreader_main_v3.png" alt="Photo d'illustration du RSS Reader" class="screenshots">
+        </a>
+
+        <div class="modal fade" id="thirdModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" style="max-width: 70%;">
+            <div class="modal-content">
+
+              <div id="thirdCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#thirdCarousel" data-bs-slide-to="0"
+                    class="active slideIndicators" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#thirdCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#thirdCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="6500">
+                    <img src="/assets/img/scr_leclubdestanley_main_v3.png" class="d-block w-100"
+                      alt="texte alternatif 1">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="6500">
+                    <img src="/assets/img/scr_livrechanges_main_v3.png" class="d-block w-100" alt="texte alternatif 2">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="6500">
+                    <img src="/assets/img/scr_hopital_main_v3.png" class="d-block w-100" alt="texte alternatif 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#thirdCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#thirdCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <img src="assets/img/scr_hopital_main_v3.png" alt="Photo d'illustration du site de l'Hôpital" class="screenshots">
-            </div>
 
-            <div class="projects1" data-aos="fade-left">
-              <img src="assets/img/scr_rssreader_main_v3.png" alt="Photo d'illustration du RSS Reader" class="screenshots">
-              <div class="projectsText">
-                <h3>RSS Reader</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officiis soluta, iste et modi dolore laboriosam enim sed dignissimos harum nostrum provident tenetur doloremque maxime. Dolorem rerum quas soluta libero.</p>
-                <form class="projectsButtons">
-                  <button type="submit" class="fill" formaction="https://github.com/benoit-77/RSS_LeMonde">Lien GitHub</button>
-               </form>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="projectsText">
+          <h3>RSS Reader</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officiis soluta, iste et modi dolore
+            laboriosam enim sed dignissimos harum nostrum provident tenetur doloremque maxime. Dolorem rerum quas soluta
+            libero.</p>
+          <form class="projectsButtons">
+            <button type="submit" class="fill" formaction="https://github.com/benoit-77/RSS_LeMonde">Lien
+              GitHub</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="projects2" data-aos="fade-right">
+        <div class="projectsText">
+          <h3>Le club de Stanley</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officiis soluta, iste et modi dolore
+            laboriosam enim sed dignissimos harum nostrum provident tenetur doloremque maxime. Dolorem rerum quas soluta
+            libero.</p>
+          <form class="projectsButtons">
+            <button type="submit" class="fill" formaction="https://github.com/benoit-77/LeClubDeStanley">Lien
+              GitHub</button>
+          </form>
+        </div>
+        <a data-bs-toggle="modal" data-bs-target="#fourthModal">
+          <img src="assets/img/scr_leclubdestanley_main_v3.png" alt="Photo d'illustration du Club de Stanley"
+            class="screenshots">
+        </a>
+
+        <div class="modal fade" id="fourthModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" style="max-width: 70%;">
+            <div class="modal-content">
+
+              <div id="fourthCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#fourthCarousel" data-bs-slide-to="0"
+                    class="active slideIndicators" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#fourthCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#fourthCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="6500">
+                    <img src="/assets/img/scr_leclubdestanley_main_v3.png" class="d-block w-100"
+                      alt="texte alternatif 1">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="6500">
+                    <img src="/assets/img/scr_livrechanges_main_v3.png" class="d-block w-100" alt="texte alternatif 2">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="6500">
+                    <img src="/assets/img/scr_hopital_main_v3.png" class="d-block w-100" alt="texte alternatif 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#fourthCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#fourthCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
+
             </div>
+          </div>
+        </div>
 
-            <div class="projects2" data-aos="fade-right">
-              <div class="projectsText">
-                <h3>Le club de Stanley</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officiis soluta, iste et modi dolore laboriosam enim sed dignissimos harum nostrum provident tenetur doloremque maxime. Dolorem rerum quas soluta libero.</p>
-                <form class="projectsButtons">
-                  <button type="submit" class="fill" formaction="https://github.com/benoit-77/LeClubDeStanley">Lien GitHub</button>
-               </form>
-              </div>
-              <img src="assets/img/scr_leclubdestanley_main_v3.png" alt="Photo d'illustration du Club de Stanley" class="screenshots">
-            </div>
+      </div>
 
-        </section>
+    </section>
 
-        <hr>
+    <hr>
 
-        <section id="aboutMe">
-            <h2>Qui suis-je?</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quaerat suscipit, tempore aperiam adipisci perspiciatis dolore, quos excepturi repellat nisi sit cumque vel mollitia! Hic incidunt optio quae molestias excepturi?</p>
-            <br />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum alias!</p>
-            <br />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum alias!</p>
-            <br />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum alias!</p>
-            <br />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum alias!</p>
-        </section>
+    <section id="aboutMe">
+      <h2>Qui suis-je?</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quaerat suscipit, tempore aperiam
+        adipisci perspiciatis dolore, quos excepturi repellat nisi sit cumque vel mollitia! Hic incidunt optio quae
+        molestias excepturi?</p>
+      <br />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor
+        non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum
+        alias!</p>
+      <br />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor
+        non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum
+        alias!</p>
+      <br />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor
+        non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum
+        alias!</p>
+      <br />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor
+        non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum
+        alias!</p>
+    </section>
 
-        <hr>
+    <hr>
 
-        <section id="skills" data-aos="fade-up">
-            <h2>Ma boîte à outils</h2>
-            <!-- A MENTIONNER : HTML, CSS, JavaScript, PHP // Bootstrap, Symfony // MySQL, Git (GitHub) // Figma, Trello // Windows, Linux -->
-            <ul class="skills">
-              <li><img src="/assets/icons/html_color.svg" alt="Icône HTML" class="skillsIcons">HTML</li>
-              <li><img src="/assets/icons/css_color.svg" alt="Icône CSS" class="skillsIcons">CSS</li>
-              <li><img src="/assets/icons/javascript_color.svg" alt="Icône JavaScript" class="skillsIcons">JavaScript</li>
-              <li><img src="/assets/icons/php_color.svg" alt="Icône PHP" class="skillsIcons">PHP</li>
-              <li><img src="/assets/icons/bootstrap_color.svg" alt="Icône Bootstrap" class="skillsIcons">Bootstrap</li>
-              <li><img src="/assets/icons/symfony_color.svg" alt="Icône Symfony" class="skillsIcons">Symfony</li>
-              <li><img src="/assets/icons/mysql_color.svg" alt="Icône MySQL" class="skillsIcons">MySQL</li>
-              <li><img src="/assets/icons/github_color.svg" alt="Icône GitHub" class="skillsIcons">GitHub</li>
-              <li><img src="/assets/icons/figma_color.svg" alt="Icône Figma" class="skillsIcons">Figma</li>
-              <li><img src="/assets/icons/trello_color.svg" alt="Icône Trello" class="skillsIcons">Trello</li>
-              <li><img src="/assets/icons/wordpress_black.svg" alt="Icône Wordpress" class="skillsIcons">Wordpress</li>
-              <li><img src="/assets/icons/linux_color.svg" alt="Icône Linux" class="skillsIcons">Linux</li>
-            </ul>
+    <section id="skills" data-aos="fade-up">
+      <h2>Ma boîte à outils</h2>
+      <ul class="skills">
+        <li><img src="/assets/icons/html_color.svg" alt="Icône HTML" class="skillsIcons">HTML</li>
+        <li><img src="/assets/icons/css_color.svg" alt="Icône CSS" class="skillsIcons">CSS</li>
+        <li><img src="/assets/icons/javascript_color.svg" alt="Icône JavaScript" class="skillsIcons">JavaScript</li>
+        <li><img src="/assets/icons/php_color.svg" alt="Icône PHP" class="skillsIcons">PHP</li>
+        <li><img src="/assets/icons/bootstrap_color.svg" alt="Icône Bootstrap" class="skillsIcons">Bootstrap</li>
+        <li><img src="/assets/icons/symfony_color.svg" alt="Icône Symfony" class="skillsIcons">Symfony</li>
+        <li><img src="/assets/icons/mysql_color.svg" alt="Icône MySQL" class="skillsIcons">MySQL</li>
+        <li><img src="/assets/icons/github_color.svg" alt="Icône GitHub" class="skillsIcons">GitHub</li>
+        <li><img src="/assets/icons/figma_color.svg" alt="Icône Figma" class="skillsIcons">Figma</li>
+        <li><img src="/assets/icons/trello_color.svg" alt="Icône Trello" class="skillsIcons">Trello</li>
+        <li><img src="/assets/icons/wordpress_black.svg" alt="Icône Wordpress" class="skillsIcons">Wordpress</li>
+        <li><img src="/assets/icons/linux_color.svg" alt="Icône Linux" class="skillsIcons">Linux</li>
+      </ul>
+    </section>
 
-        </section>
+    <hr>
 
-        <hr>
+    <section id="contact">
+      <h2>Contactez moi !</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quaerat suscipit, tempore aperiam
+        adipisci perspiciatis dolore, quos excepturi repellat nisi sit cumque vel mollitia! Hic incidunt optio quae
+        molestias excepturi?</p>
+      <br />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor
+        non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum
+        alias!</p>
+      <br />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor
+        non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum
+        alias!</p>
+      <br />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor
+        non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum
+        alias!</p>
+      <br />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor
+        non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum
+        alias!</p>
+    </section>
 
-        <section id="contact">
-            <h2>Contactez moi !</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quaerat suscipit, tempore aperiam adipisci perspiciatis dolore, quos excepturi repellat nisi sit cumque vel mollitia! Hic incidunt optio quae molestias excepturi?</p>
-            <br />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum alias!</p>
-            <br />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum alias!</p>
-            <br />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum alias!</p>
-            <br />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus, quod ipsum dignissimos cum dolor non accusantium voluptates sequi ex odit neque corporis, nisi omnis necessitatibus harum eligendi voluptatum alias!</p>
-        </section>
+  </main>
 
-    </main>
+  <a href="#" class="top">&#8593;</a>
 
-    <a href="#" class="top">&#8593;</a>
+  <div class="stopTopButton"></div>
 
-    <div class="stopTopButton"></div>
+  <footer>
+    <p class="copyrights">Benoit Durand © 2023</p>
+  </footer>
 
-    <footer>
-        <p class="copyrights">Benoit Durand © 2023</p>
-    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>
