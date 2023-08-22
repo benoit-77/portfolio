@@ -147,6 +147,8 @@ hr {
 .aboutMeTexts {
     text-align: center;
     font-size: 1em;
+    margin: auto auto 50px auto;
+    width: 90%;
 }
 
 .skills {
@@ -165,9 +167,33 @@ hr {
     font-size: 1.1em;
 }
 
-.skillsIcons {
+.icons {
     width: 80px;
     margin: 10px;
+}
+
+.contactText {
+    width: 70%;
+    text-align: center;
+    font-size: 1em;
+    margin: auto auto 50px auto;
+}
+
+.contactLinks {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contactTextAndLinks {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -216,7 +242,7 @@ footer {
     left: 0px;
 }
 
-.projectsButtons {
+.projectsButtons, .cvButton {
     width: 90%;
     margin: auto;
     display: flex;
