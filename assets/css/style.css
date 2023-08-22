@@ -1,6 +1,6 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    color: beige;
+    color: rgb(249, 249, 238);
 }
 
 body {
@@ -140,8 +140,13 @@ section {
 hr {
     width: 30%;
     margin: 50px auto !important;
-    height: 3px;
-    background-color: #FAF8BF;
+    border-top: 1px solid #82752A !important;
+    opacity: 0.8 !important;
+}
+
+.aboutMeTexts {
+    text-align: center;
+    font-size: 1em;
 }
 
 .skills {
@@ -169,11 +174,12 @@ footer {
     width: 100%;
     position: relative;
     background-color: #178582;
+    height: auto;
     margin: 0 auto;
     bottom: 0px;
     padding: 10px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .copyrights {
