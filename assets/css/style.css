@@ -14,12 +14,13 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
 .textHeader {
-    width: 60%;
+    width: 50%;
 }
 
 h1 {
@@ -91,6 +92,13 @@ h2 {
     margin-top: 1em;
 }
 
+section {
+    margin: 50px auto 100px auto;
+    width: 60%;
+    min-width: 250px;
+    font-size: 1em;
+}
+
 #projects {
     margin: 50px auto 100px auto;
     width: 70%;
@@ -98,11 +106,8 @@ h2 {
     font-size: 1em;
 }
 
-section {
-    margin: 50px auto 100px auto;
-    width: 60%;
-    min-width: 250px;
-    font-size: 1em;
+.projectsTitle {
+    text-align: center;
 }
   
 .projects1 {
@@ -148,7 +153,7 @@ hr {
     text-align: center;
     font-size: 1em;
     margin: auto auto 50px auto;
-    width: 90%;
+    width: 80%;
 }
 
 .skills {
@@ -266,13 +271,56 @@ footer {
   }
 
 @media screen and (max-width: 1000px) {
+
+    header {
+        height: 93vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .textHeader {
+        width: 80%;
+    }
+
+    .top {
+        display: none;
+    }
+
     section {
         width: 95%;
         margin: 20px auto;
     }
 
+    .projectsText {
+        width: 100%;
+    }
+
+    .skills {
+        width: 100%;
+        margin: auto;
+        padding-left: 0;
+    }
+
     .screenshots {
         max-width: 300px;
+    }
+
+    .contactText {
+        width: 80%;
+    }
+
+    .icons {
+        width: 65px;
+    }
+    
+    .contactLinks {
+        justify-content: center;
+        gap: 20px;
     }
 
   }
