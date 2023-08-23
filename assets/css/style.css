@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    max-width: 1080px;
+    width: 70%;
     height: 93vh;
     margin: 0 auto;
     display: flex;
@@ -248,12 +248,13 @@ footer {
 }
 
 .projectsButtons, .cvButton {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .carousel-control-next,
@@ -262,33 +263,15 @@ footer {
     filter: invert(100%);
 }
 
-@media screen and (max-width: 1279px) {
-    #projects {
-        width: 90%;
-        font-size: 0.9em;
-    }
-
-  }
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1343px) {
 
     header {
-        height: 93vh;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 0;
+        width: 90%;
+        gap: 20px;
     }
 
     .textHeader {
-        width: 80%;
-    }
-
-    .top {
-        display: none;
+        width: 60%;
     }
 
     section {
@@ -296,18 +279,19 @@ footer {
         margin: 20px auto;
     }
 
+    #projects {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
     .projectsText {
-        width: 100%;
+        width: 80%;
     }
 
     .skills {
         width: 100%;
         margin: auto;
         padding-left: 0;
-    }
-
-    .screenshots {
-        max-width: 300px;
     }
 
     .contactText {
@@ -321,6 +305,19 @@ footer {
     .contactLinks {
         justify-content: center;
         gap: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .screenshots {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .top {
+        display: none;
     }
 
   }
